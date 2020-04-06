@@ -1,0 +1,5 @@
+platform-tools
+platforms;android-29
+extras;android;m2repository
+extras;google;m2repository
+extras;google;google_play_services
