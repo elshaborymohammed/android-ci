@@ -14,7 +14,7 @@ RUN dnf -qy update && \
         patch && \
         gem install fastlane -NV
 
-ENV VERSION_SDK_TOOLS "4333796"
+ENV VERSION_SDK_TOOLS "6858069"
 ENV ANDROID_HOME "/sdk"
 ENV PATH "$PATH:${ANDROID_HOME}/tools"
 ENV LANG=en_US.UTF-8
