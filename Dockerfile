@@ -32,4 +32,4 @@ RUN mkdir -p /root/.android && \
     touch /root/.android/repositories.cfg && \
     ${ANDROID_HOME}/cmdline-tools/bin/sdkmanager --sdk_root=${ANDROID_HOME} --update
     
-RUN yes | ${ANDROID_HOME}/cmdline-tools/bin/sdkmanager --licenses
+RUN yes | ${ANDROID_HOME}/cmdline-tools/bin/sdkmanager --sdk_root=${ANDROID_HOME} --licenses > /dev/null
