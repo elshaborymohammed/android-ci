@@ -30,5 +30,6 @@ RUN curl -s https://dl.google.com/android/repository/commandlinetools-linux-${VE
 ADD packages.txt ${ANDROID_HOME}
 RUN mkdir -p /root/.android && \
     touch /root/.android/repositories.cfg && \
-    ${ANDROID_HOME}/tools/bin/sdkmanager --update
-RUN yes | ${ANDROID_HOME}/tools/bin/sdkmanager --licenses
+    ${ANDROID_HOME}/cmdline-tools/bin/sdkmanager --sdk_root=${ANDROID_HOME} --update
+    
+RUN yes | ${ANDROID_HOME}/cmdline-tools/bin/sdkmanager --licenses
