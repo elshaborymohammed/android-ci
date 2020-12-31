@@ -23,7 +23,7 @@ ENV JAVA_HOME /usr/lib/jvm/java
 RUN localedef -f UTF-8 -i en_US en_US.UTF-8
 RUN curl -sL https://firebase.tools | bash
 
-RUN curl -s https://dl.google.com/android/repository/sdk-tools-linux-${VERSION_SDK_TOOLS}.zip > /sdk.zip && \
+RUN curl -s https://dl.google.com/android/repository/commandlinetools-linux-${VERSION_SDK_TOOLS}_latest.zip > /sdk.zip && \
     unzip /sdk.zip -d /sdk && \
     rm -v /sdk.zip
 
