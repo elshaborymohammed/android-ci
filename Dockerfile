@@ -8,7 +8,7 @@ RUN dnf -qy update && \
         glibc-locale-source \
         glibc-langpack-en \
         unzip \
-        java-1.8.0-openjdk-devel \
+        java-11-openjdk-devel.x86_64 \
         ruby-devel \
         redhat-rpm-config \
         patch && \
